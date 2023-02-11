@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
                               ".styles.ts",
                               ".service.ts"};
 
-    if (argc <= 3)
+    if (argc < 3)
         cli_values = DisplayMenu();
 
-    if (argc >= 4)
+    if (argc >= 3)
         cli_values = GetValuesFromArgs(argc, argv);
 
     for (int i = 0; i < 4; i++)
